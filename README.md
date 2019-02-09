@@ -33,6 +33,12 @@ This repo contains multiple performance tests and their results regarding how GP
 
 - `requirements_cpu_node_LiDAR-PDAL.txt` : env where PDAL tests on the LiDAR data were run.
 
+### Node hardware specs
+
+- CPU node/worker : 8 vCPUs, ~60GB RAM
+
+- GPU node/worker: V100 GPU, 8 vCPUs, ~60GB RAM
+
 ### Dataset Specs
 
 Financial time-series:
