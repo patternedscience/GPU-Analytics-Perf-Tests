@@ -354,7 +354,7 @@ print('Trading volume stats: mean of {}, variance of {}'.format(symbols_gdf['vol
     Trading volume stats: mean of 11881.699675937818, variance of 10852793799.4029
     Trading volume stats: mean of 11881.699675937818, variance of 10852793799.4029
     Trading volume stats: mean of 11881.699675937818, variance of 10852793799.4029
-    8.6 ms ± 185 µs per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    8.72 ms ± 241 µs per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 #### 2.2 Sorting
@@ -371,7 +371,7 @@ print(symbols_gdf[['symbol_id', 'datetime', 'volume']].sort_values(by='volume', 
     28629282        41 2008-11-21T16:00:00.000 116022000.0
       symbol_id                datetime      volume
     28629282        41 2008-11-21T16:00:00.000 116022000.0
-    375 ms ± 2.83 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    374 ms ± 4.69 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 #### 2.3 Mixed analytics (math ops + sorting) [finding the top per-minute return]:
@@ -389,7 +389,7 @@ print(symbols_gdf[['symbol_id', 'datetime', 'return']].sort_values(by='return', 
     33060823        46 2010-05-06T17:23:00.000 22.580645161290334
       symbol_id                datetime             return
     33060823        46 2010-05-06T17:23:00.000 22.580645161290334
-    314 ms ± 4.05 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    327 ms ± 19.3 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 ## License

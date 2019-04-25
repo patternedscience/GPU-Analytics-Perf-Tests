@@ -41,7 +41,7 @@ print(list(con.execute("SELECT  avg(volume), variance(volume) FROM symbols_minut
 ```
 
     (11881.752968670653, 10852793799.409428)
-    459 ms ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
+    1.6 s ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
 
 
 #### Repeating the query to observe the performance improvement with the out-of-the-box caching feature:
@@ -55,7 +55,7 @@ print(list(con.execute("SELECT  avg(volume), variance(volume) FROM symbols_minut
     (11881.752968670653, 10852793799.409428)
     (11881.752968670653, 10852793799.409428)
     (11881.752968670653, 10852793799.409428)
-    49.5 ms ± 154 µs per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    45.3 ms ± 2.28 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 ### Sorting
@@ -73,7 +73,7 @@ print(list(con.execute(sqlQuery))[0])
 ```
 
     (41, datetime.datetime(2008, 11, 21, 16, 0), 116022000.0)
-    401 ms ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
+    604 ms ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
 
 
 #### Repeating the query to observe the performance improvement with the out-of-the-box caching feature:
@@ -93,7 +93,7 @@ print(list(con.execute(sqlQuery))[0])
     (41, datetime.datetime(2008, 11, 21, 16, 0), 116022000.0)
     (41, datetime.datetime(2008, 11, 21, 16, 0), 116022000.0)
     (41, datetime.datetime(2008, 11, 21, 16, 0), 116022000.0)
-    25 ms ± 494 µs per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    30.4 ms ± 4.88 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 ### Mixed analytics (math ops + sorting):
@@ -117,7 +117,7 @@ print(list(con.execute(sqlQuery))[0])
 ```
 
     (46, datetime.datetime(2010, 5, 6, 17, 23), 22.58065414428711)
-    1.66 s ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
+    3.6 s ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
 
 
 #### Repeating the query to observe the performance improvement with the out-of-the-box caching feature:
@@ -142,7 +142,7 @@ print(list(con.execute(sqlQuery))[0])
     (46, datetime.datetime(2010, 5, 6, 17, 23), 22.58065414428711)
     (46, datetime.datetime(2010, 5, 6, 17, 23), 22.58065414428711)
     (46, datetime.datetime(2010, 5, 6, 17, 23), 22.58065414428711)
-    49.6 ms ± 1.67 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    31.6 ms ± 1.33 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 ## License

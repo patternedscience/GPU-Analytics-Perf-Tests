@@ -54,7 +54,7 @@ print(list(con.execute(sqlQuery))[0][0])
 ```
 
     77475
-    1.77 s ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
+    268 ms ± 0 ns per loop (mean ± std. dev. of 1 run, 1 loop each)
 
 
 #### Repeating the query to observe the performance improvement with the out-of-the-box caching feature:
@@ -73,7 +73,7 @@ print(list(con.execute(sqlQuery))[0][0])
     77475
     77475
     77475
-    25.9 ms ± 3.52 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
+    31 ms ± 8.52 ms per loop (mean ± std. dev. of 3 runs, 1 loop each)
 
 
 ## License
