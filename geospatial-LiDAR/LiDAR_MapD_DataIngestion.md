@@ -1,4 +1,4 @@
-# Steps to ingest LiDAR data into MapD Core DB
+# Steps to ingest LiDAR data into OmniSci (MapD) Core DB
 
 ## Download file
 
